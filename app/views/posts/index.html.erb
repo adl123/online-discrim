@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Дискриминант онлайн</title>
+    <script src="/assets/javascripts/calc.js"></script>
+      <!-- stylesheet_link_tag "/assets/stylesheets/index.css"  -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body class = "bg">
+         <center>
+      <h1 class = "my-text">Дискриминант</h1>
+      <h2 class = "my-text">Формула дискриминанта имеет вид
+        <code> D=b^2 - 4ac </code>
+      </h2>
+      <h2 class = "my-text"> Пример вычисления дискриминанта
+          <code>2x^2+5x+2=0</code>
+      </h2>
+      <h2 class = "my-text" style = " width : 1000px "> В данном случае переменная а=2, так как коэфициент 2 принадлежит квадратичной переменной х;
+           Следовательно переменная b=5, так как коэфициент 5 принадлежит переменной х;
+           А переменная с=2;
+           Вычисляя по формуле переменная b в квадрате равна 25, следовательно дискриминант равен 25-4*2*2=9;
+           </h2>
+        <form class = "brd" style = " width : 1000px ">
+        <h3 class = "my-text"> коэффициент a=
+          <p>
+            <input name="a" id = "a">
+          </p>
+        </h3>
+        <h3 class = "my-text"> коэффициент b=
+          <p><input name="b" id = "b">
+          </p>
+        </h3>
+        <h3 class = "my-text"> коэффициент c=
+           <p>
+             <input name="c" id = "c">
+           </p>
+         </h3>
+         <button type="button" onClick="calc()" value="" >Расчитать</button>
+         <p>Результат: </p><p>d= <output id="result" color="#000000" ></output></p>
+            <p>x1=<output id="x1" color="#000000" ></output></p>
+          <p>  x2=<output id="x2" color="#000000" ></output></p>
+         </p>
+     </form>
+   </body>
+</html>

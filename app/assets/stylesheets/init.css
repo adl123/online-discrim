@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload=init;
+
+    function init(){
+        var button=document.getElementById("butt");
+        button.onclick=buttonHandler;
+    }
+    function buttonHandler(){
+        var feet = document.getElementById("feet");
+        var f=feet.value;
+        var weight= document.getElementById("weight");
+        var w=weight.value;
+        var result=document.getElementById("result");
+        var r=w+f;
+        result.innerHTML=r;
+}
+
+    </script>
+</head>
+<body>
+    <h1>Форма JS</h1>
+    <form action="#" id="bmiCalculator">
+        <label for="feet" for="inches">Height:</label>
+        <input type="text" id="feet"> feet<br>
+
+        <label for="pounds">Weight:</label>
+        <input type="text" id="pounds">pounds <br><br>
+        <input type="button" id="butt" value="Calculate!">
+    </form>
+    <p>Your BMI: <output id="result"></output></p>
+</body>
+</html>
